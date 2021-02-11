@@ -1,7 +1,6 @@
-###Created by loctang###
 ###I am not held accountable for your actions, this is made for penetration testers###
 
-#Checking URL for HTTP or HTTPS
+
 url_checker() {
     if [ ! "${1//:*}" = http ]; then
         if [ ! "${1//:*}" = https ]; then
@@ -11,7 +10,7 @@ url_checker() {
     fi
 }
 
-#Information on software & Main Cod
+
 echo -e "\n\e[1;31;42m ︵‿‿୨The Masked Phish୧‿︵‿ \e[0m"
 echo -e "\n\e[1;31;42m ┌────────────────────────────┐ \e[0m"
 echo -e "\e[1;31;42m   │This tool was created for   │ \e[0m"
@@ -28,7 +27,7 @@ url_checker $phish
 short=$(curl -s https://da.gd/s/?url=${phish})
 shorter=${short#https://}
 echo -e "\n\e[1;31;42m Setting the mask \e[0m"
-echo 'Enter the domain you wish to mask the phish URL with, ex. https://fbi.gov ) :'
+echo 'Enter the domain you wish to mask the phish URL with, ex. https://test.com ) :'
 echo -en "\e[32m--->\e[0m "
 read mask
 url_checker $mask
