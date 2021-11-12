@@ -6,7 +6,7 @@ The Masked Phish is a piece of software that will mask any links and URLs you wi
 - Any illegal activity done with this tool is NOT my responsibility, if you are arrested and charged, it is not my fault
 
 # Installing and Starting
-- git clone https://github.com/loctangX/TheMaskedPhish
+- git clone https://github.com/g3q/TheMaskedPhish
 - cd TheMaskedPhish
 - bash tmp.sh
 
